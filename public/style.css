@@ -1,0 +1,191 @@
+/* Файл: style.css */
+
+/* Общие стили для register.html и buslist.html */
+.page-normal {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ===== Стили для wait.html (зелёный верх / красный низ) ===== */
+#pageToggle {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-green {
+  flex: 1;
+  background: #2ecc71;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bottom-red {
+  flex: 1;
+  background: #e74c3c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Большой переключатель */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 52px;
+  width: 52px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(60px);
+}/* Файл: style.css */
+
+/* Общие стили для register.html и buslist.html */
+.page-normal {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* ===== Стили для wait.html (зелёный верх / красный низ) ===== */
+#pageToggle {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-green {
+  flex: 1;
+  background: #2ecc71;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.bottom-red {
+  flex: 1;
+  background: #e74c3c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Большой переключатель */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 60px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ccc;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 52px;
+  width: 52px;
+  left: 4px;
+  bottom: 4px;
+  background: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(60px);
+}
